@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Dynamic To-Do List</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">AJ</div>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-grid">
+        <div class="content-item">Home Section</div>
+        <div class="content-item">About Section</div>
+        <div class="content-item">Services Section</div>
+        <div class="content-item">Contact Section</div>
+        <div class="todo-item">
+            <h2>To-Do List</h2>
+            <div class="todo-container">
+                <input type="text" id="todoInput" placeholder="Enter a new task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <ul class="todo-list" id="todoList"></ul>
+        </div>
+    </div>
+    <section class="image-gallery" id="image-gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Add your images here -->
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" alt="Gallery Image 1">
+            <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg" alt="Gallery Image 2">
+            <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/amazing-stone-path-in-forest-free-image.jpg?w=600&quality=80" alt="Gallery Image 3">
+            <img src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg" alt="Gallery Image 4">
+            <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_640.jpg" alt="Gallery Image 5">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/009/273/280/small/concept-of-loneliness-and-disappointment-in-love-sad-man-sitting-element-of-the-picture-is-decorated-by-nasa-free-photo.jpg" alt="Gallery Image 6">
+        </div>
+        <div class="lightbox" id="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
